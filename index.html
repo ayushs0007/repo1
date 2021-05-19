@@ -2,29 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, intial-scale=0.1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Ayush Singh 20AR10005</title>
+      </head>
         <style>
-            .header{
-    height: 95vh;
-    background-image: linear-gradient(to right bottom,green,darkgreen);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-     
-   
-
-}
+        .body{
+          background-color: purple;
+        }
 html{
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 .heading-secondary{
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: white;
+    background-color: #ddda2a;
     letter-spacing: .2rem;
     transition: all .2s;
     text-align: left;
@@ -161,53 +154,21 @@ html{
 }
 .column {
   float: left;
-  width: 25%;
   padding: 0 10px;
+  width: 25%;
+}
+.column2{
+  float: left;
+  padding: 0 10px;
+  width:33% ;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   padding: 0px;
   text-align: center;
   background-color: #f1f1f1;
 }
-ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333;
-              
-            }
-            
-            li {
-              float: left;
-              border-right:1px solid #bbb;
-            }
-            
-            li:last-child {
-              border-right: none;
-            }
-            
-            li a {
-              display: block;
-              color: white;
-              text-align: center;
-              padding: 20px 110px;
-              text-decoration: none;
-            }
-            
-            li a:hover:not(.active) {
-              background-color: #111;
-            }
-            
-            .active {
-              background-color: grey;
-            }
-            .img{
-                padding: 0;
-                border: 20px;
-            left: 50%;
-            }
+
             .wel{
                 font-size: 3rem;
     text-transform: uppercase;
@@ -236,40 +197,177 @@ ul {
   background: #007bb5;
   color: white;
 }
+.igma{
+  position: relative;
+  top:-5rem;
+}
+.aboutss{
+  background-image: url(img/white-interior-blur-blurred-chair.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 40rem;
 
+}
+.write{
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.sp{
+  background-image: url(img/spice-pasta-lunch-top-fresh\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.footers{
+  background-image: url(img/urban-view-with-red-traffic-light.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+  
+  position: relative;
+  z-index: -1;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 200px;
+}
+.all{
+  background-color:#6f2a84;
+  position: relative;
+  z-index: -100;
+}
+nav{
+    float: left;
+    margin: 0;
+    overflow:hidden;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+.bg-div{
+   background:#333;
+   overflow: hidden;
+}
+.container{
+  height: 900px;
+width :100%;
+border:2px solid black;
+position: relative;
+top:-5rem;
+display: flex;
+margin: 0;
+flex-direction:row ;
+color:blueviolet;
+font-size: 100px;
+}
+.items{
+  background-color: whitesmoke;
+  border: 2px solid black;
+  position: relative;
+  top:8rem;
+  
+}
+#item-1{
+  order: 20;
+  width: 50%;
+}
+#item-2{
+  order:1;
+  width:50%;
+}
+
+.button{
+  font-size: 70px;
+  border-style: solid;
+  position: relative;
+  top: 15rem;
+  border-radius: 5000rem;
+  border-width: 10px;
+  width: 300px;
+  left:14rem;
+  background-color: grey;
+
+}
         </style>
-    </head>
+    
     <body>
+      <section class="all">
+        <div class="bg-div">
+          <img class="logo-img" src="img/logo.png" width="130" height="130" ALT="align box" ALIGN=CENTER>
+        <nav>
         <ul>
-            <li><a  href="#">About Us</a></li>
+            <li><a  href="#aboutss">About Us</a></li>
             <li><a href="#sp">Specialities</a></li>
             <li><a href="#re">Recommendations</a></li>
             <li><a href="#rev">Reviews</a></li>
             <li><a href="#co">Contact Us</a></li>
           </ul>
-      <div class="logo_box">
-          <img src="img/logo.png"/>
+        </nav>
         </div>
          <div class="container">
-            <img class="imga" src="img/feature_-_Main_hall_1.jpg" width="1500px" height="700px" />
-         <div class="centered">Delicia</div>
+           <div class="items" id="item-1">
+             <img src="img/feature_-_Main_hall_1.jpg" width="100%" height="900px"/>
+           </div>
+         <div class="items"id="item-2">
+           Delicia
+           <div class="button"><a href="#hi">speciality</a></div>
+          </div>
          
-            
         </div>
-        </body>
-    <main>
-      <a name="#about"></a>
+    <section class="aboutss">
         <section class="section-about">
+          <div id="abouts">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     About Us
                 </h2>
-            </div>
+                <div class="write">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+             </div>
+          </div>
+        </section>
+        </section>
 
 
-        <section class="sp" id="sp">
+
+        <section class="sps">
             <div class="u-center-text u-margin-bottom-big">
-              <div id="#sp"></div>
+              <a name="hi"></a>
                 <h2 class="heading-secondary">
                     Speciality Dishes 
                 </h2>
@@ -318,6 +416,7 @@ ul {
             </div>
                
               </div>
+              </section>
 
               <div id="re"></div>
                 <h2 class="heading-secondary">
@@ -326,6 +425,7 @@ ul {
             </div>
             <div class="search">
             <input type="text" placeholder="Search..">
+            <br><br>
             </div>
             <section>
                 <div class="row">
@@ -381,7 +481,7 @@ ul {
             </h2>
         </div>
         <div class="row">
-        <div class="column">
+        <div class="column2">
             <div class="card">
             <img src="img/bill.jpg" alt="Avatar" style="width:300px">
            
@@ -389,7 +489,7 @@ ul {
               <p>review</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column2">
             <div class="card">
             <img src="img/elon.jpg" alt="Avatar" style="width:300px">
             
@@ -397,7 +497,7 @@ ul {
               <p>review</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column2">
             <div class="card">
             <img src="img/mark.jpg" alt="Avatar" style="width:300px">
             
@@ -426,6 +526,7 @@ ul {
 </div>
 <input type="submit" value="Submit"/>
 <div class="u-center-text u-margin-bottom-big">
+  <section class="footers">
   <div id="co"></div>
     <h2 class="heading-secondary">
         contact us
@@ -435,9 +536,11 @@ ul {
       <a href="https://www.facebook.com/profile.php?id=100007404583580" target="_blank" class="fa fa-facebook"></a>
       <a href="https://www.instagram.com/ayushsinghrajput_007/" target="_blank" class="fa fa-instagram"></a>
       <a href="https://www.linkedin.com/in/ayush-singh-43102817b" target="_blank" class="fa fa-linkedin"></a>
+    
 </div>
 </div>
- 
-
-</body>
+</section>
+</section>
+</section>
+    </body>
 </html>
