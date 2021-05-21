@@ -228,10 +228,10 @@ html{
   background-image: url(img/urban-view-with-red-traffic-light.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 20rem;
+  background-size: cover;
   
   position: relative;
-  z-index: -1;
+  z-index: 0;
   text-align: center;
 }
 .fa {
@@ -246,7 +246,7 @@ html{
 .all{
   background-color:#6f2a84;
   position: relative;
-  z-index: -100;
+  z-index:0;
 }
 nav{
     float: left;
@@ -268,11 +268,10 @@ nav ul li{
 nav > ul > li > a{
     color: #aaa;
     display: block;
-    line-height: 2em;
-    padding: 0.5em 1em;
+    line-height: 8em;
+    padding: 0.5em 6em;
     text-decoration: none;
 }
-
 .logo-img{
     float: left;
     position: relative;
@@ -291,7 +290,7 @@ top:-5rem;
 display: flex;
 margin: 0;
 flex-direction:row ;
-color:blueviolet;
+color:purple;
 font-size: 100px;
 }
 .items{
@@ -311,33 +310,111 @@ font-size: 100px;
 }
 
 .button{
-  font-size: 70px;
+  font-size: 50px;
   border-style: solid;
   position: relative;
   top: 15rem;
   border-radius: 5000rem;
   border-width: 10px;
   width: 300px;
+  height: 100px;
   left:14rem;
-  background-color: grey;
+  background-color:purple;
+  color: ;
 
+}
+#navigation-bar a:hover {
+  color: blueviolet;
+  transform: scale(1.3);
+}
+#navigation-bar a::before {
+  transition: all 0.4s ease-in-out;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+.price{
+  text-align: left;
+}
+.disc{
+  text-align: right;
+}
+.disc {
+    color:red;
+    font-size: 22px;
+    overflow: hidden;
+    position: relative;
+    top: -3rem;
+  }
+  .search{
+    position: relative;
+    top: -3rem;
+    overflow: hidden;
+  }
+  .search input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  position: relative;
+  left: -28rem;
+}
+.search .search-container {
+  float: right;
+}
+.search .search-container button {
+  float: right;
+  padding: 6px 2px;
+  margin-top: 8px;
+  margin-right: 2px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 18rem;
+}
+.revf{
+background-image: url(img/feedback-word-written-paper-note.jpg);
+background-size: cover;
+height: 20rem;
+width: 100%;
+}
+.tops{
+  font-size: 50px;
+  border-style: solid;
+  position: relative;
+  border-radius: 30px;
+  border-width: 1px;
+  width: 250px;
+  height: 50px;
+  left:40rem;
+  background-color:purple;
+  
 }
         </style>
     
     <body>
       <section class="all">
         <div class="bg-div">
+          <a name="top"></a>
           <img class="logo-img" src="img/logo.png" width="130" height="130" ALT="align box" ALIGN=CENTER>
         <nav>
+          <div id="navigation-bar">
         <ul>
-            <li><a  href="#aboutss">About Us</a></li>
-            <li><a href="#sp">Specialities</a></li>
+            <li><a  href="#abouts">About Us</a></li>
+            <li><a href="#hi">Specialities</a></li>
             <li><a href="#re">Recommendations</a></li>
             <li><a href="#rev">Reviews</a></li>
             <li><a href="#co">Contact Us</a></li>
           </ul>
         </nav>
         </div>
+      </div>
+      </div>
          <div class="container">
            <div class="items" id="item-1">
              <img src="img/feature_-_Main_hall_1.jpg" width="100%" height="900px"/>
@@ -377,9 +454,13 @@ font-size: 100px;
                 <div class="card">
                 <img src="img/Hyderabadi-chicken-Biryani.jpg" alt="1 image" style="width:100%">
                 <h1>Chicken biryani</h1>
-                <p><button>Add+</button></p>
+                
                 <p class="some text">lorem ipsum</p>
-                <p class="price">₹320</p>
+                <div id="focu">
+                  <p><button>Add+</button></p>
+                </div>
+                <p class="price">₹4̶0̶0̶ (₹320)</p>
+                <p class="disc">20% off</p> 
                 </div>
                 
                
@@ -389,19 +470,26 @@ font-size: 100px;
                 <div class="card">
                 <img src="img/Best-Mutton-Biryani-Recipe.jpg" alt="2 image" style="width:100%">
                 <h1>Mutton Biryani</h1>
-                <p><button>Add+</button></p>
+                
                 <p class="some text">lorem ipsum</p>
-                <p class="price">₹540</p>
+                <div id="focu">
+                  <p><button>Add+</button></p>
+                </div>
+                <p class="price">₹5̶4̶0̶ (₹432)</p>
+                <p class="disc">20% off</p> 
                 </div>
                 
               </div>
               <div class="column">
                 <div class="card">
-                <img src="img/Chilli-Garlic-Noodles-3.jpg" alt="3 image" style="width:100%">
+                <img src="img/Chilli-Garlic-Noodles-3.jpg" alt="3 image" style="width:100%" >
                 <h1>Noodles</h1>
-                <p><button>Add+</button></p>
                 <p class="some text">lorem ipsum</p>
-                <p class="price">₹120</p>
+                <div id="focu">
+                  <p><button>Add+</button></p>
+                </div>
+                <p class="price">₹1̶2̶0̶ (₹96)</p>
+                <p class="disc">20% off</p> 
                 </div>
                 
               </div>
@@ -409,9 +497,12 @@ font-size: 100px;
                 <div class="card">
                 <img src="img/Gobi-Manchurian-HOHV-500x375.jpg" alt="4 image" style="width:100%">
                <h1>Manchurian</h1>
-                <p><button>Add+</button></p>
                 <p class="some text">lorem ipsum</p>
-                <p class="price">₹180</p>
+                <div id="focu">
+                  <p><button>Add+</button></p>
+                </div>
+                <p class="price">₹1̶8̶0̶ (₹144)</p>
+                <p class="disc">20% off</p> 
             </div>
             </div>
                
@@ -424,8 +515,10 @@ font-size: 100px;
                 </h2>
             </div>
             <div class="search">
+              <div class="search-container">
             <input type="text" placeholder="Search..">
-            <br><br>
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
             </div>
             <section>
                 <div class="row">
@@ -435,7 +528,8 @@ font-size: 100px;
                         <h1>Chicken biryani</h1>
                         <p><button>Add+</button></p>
                         <p class="some text">lorem ipsum</p>
-                        <p class="price">₹320</p>
+                        <p class="price">₹4̶0̶0̶ (₹320)</p>
+                        <p class="disc">20% off</p> 
                         </div>
                         
                        
@@ -447,7 +541,8 @@ font-size: 100px;
                         <h1>Mutton Biryani</h1>
                         <p><button>Add+</button></p>
                         <p class="some text">lorem ipsum</p>
-                        <p class="price">₹540</p>
+                        <p class="price">₹5̶4̶0̶ (₹432)</p>
+                <p class="disc">20% off</p> 
                         </div>
                         
                       </div>
@@ -457,7 +552,8 @@ font-size: 100px;
                         <h1>Noodles</h1>
                         <p><button>Add+</button></p>
                         <p class="some text">lorem ipsum</p>
-                        <p class="price">₹120</p>
+                        <p class="price">₹1̶2̶0̶ (₹96)</p>
+                        <p class="disc">20% off</p> 
                         </div>
                         
                       </div>
@@ -467,7 +563,8 @@ font-size: 100px;
                        <h1>Manchurian</h1>
                         <p><button>Add+</button></p>
                         <p class="some text">lorem ipsum</p>
-                        <p class="price">₹180</p>
+                        <p class="price">₹1̶8̶0̶ (₹144)</p>
+                <p class="disc">20% off</p> 
                     </div>
                     </div>
                        
@@ -511,6 +608,7 @@ font-size: 100px;
             <h2 class="heading-secondary">
                 REVIEW FORM
             </h2>
+            <div class="revf">
           <div class="form__group">
             <input type="text" class="form__input" placeholder="Full name" id="name" required>
             <label for="name" class="form__label">Full name</label>
@@ -525,6 +623,7 @@ font-size: 100px;
     <textarea name="review" id="" cols="30" rows="10">Put Review Here</textarea>
 </div>
 <input type="submit" value="Submit"/>
+</div>
 <div class="u-center-text u-margin-bottom-big">
   <section class="footers">
   <div id="co"></div>
@@ -536,7 +635,10 @@ font-size: 100px;
       <a href="https://www.facebook.com/profile.php?id=100007404583580" target="_blank" class="fa fa-facebook"></a>
       <a href="https://www.instagram.com/ayushsinghrajput_007/" target="_blank" class="fa fa-instagram"></a>
       <a href="https://www.linkedin.com/in/ayush-singh-43102817b" target="_blank" class="fa fa-linkedin"></a>
-    
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut facilis, officia delectus, sapiente molestias repellendus veniam illo maxime facere eum quasi quidem atque doloremque tenetur quod, autem possimus neque?</p>
+    <div class="tops">
+      <a href="#top">back to top</a></div>
+        
 </div>
 </div>
 </section>
